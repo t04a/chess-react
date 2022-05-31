@@ -7,7 +7,7 @@ interface BoardProps {
     setBoard: (board: Board) => void;
 }
 
-const BoardComponent: FC<BoardProps> = ({board, /*setBoard*/}) => {
+const BoardComponent: FC<BoardProps> = ({board, setBoard}) => {
     return (
         <div className="board">
             {board.cells.map((row, index) =>
